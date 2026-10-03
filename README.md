@@ -2820,6 +2820,8 @@ Las migraciones crean las 11 tablas y el seeder carga los catálogos, la empresa
 <!-- INSERTAR CAPTURA: terminal con php artisan migrate y php artisan db:seed --class=DemoSeeder -->
 ![Migraciones y seeder](capturas/migraciones-seeder.png)
 
+*Se usó `php artisan migrate:fresh --seed --seeder=DemoSeeder`, que recrea las tablas y carga los datos de demostración en un solo paso.*
+
 ### 8.2 Pantalla de inicio (invitado)
 Pantalla que ve cualquier visitante sin sesión iniciada: describe el sistema y ofrece los botones para ingresar o registrarse. No muestra información del negocio.
 
@@ -2849,10 +2851,9 @@ Resumen del negocio al iniciar sesión: indicadores generales, gráficos de vent
 ![Dashboard](capturas/dashboard.png)
 
 ### 8.6 Menú lateral y versión móvil
-Menú de navegación fijo en escritorio, con el grupo *Configuración > Empresa*, que se convierte en un panel desplegable (`offcanvas`) en pantallas pequeñas, demostrando el diseño responsive de Bootstrap.
+En pantallas pequeñas el menú lateral se convierte en un panel desplegable (`offcanvas`) que se abre con el botón ☰, demostrando el diseño responsive de Bootstrap. En escritorio el mismo menú queda fijo a la izquierda.
 
-<!-- INSERTAR CAPTURA: sidebar en escritorio y offcanvas en pantalla pequeña -->
-![Sidebar](capturas/sidebar.png)
+![Sidebar en móvil (offcanvas)](capturas/sidebar.png)
 
 ### 8.7 Página "Acerca de"
 Página informativa del proyecto que solicita el laboratorio, construida sobre el mismo layout.
@@ -2864,10 +2865,12 @@ Página informativa del proyecto que solicita el laboratorio, construida sobre e
 Listado con buscador y formulario de registro del CRUD genérico. Se muestra con uno de los tres módulos porque los tres funcionan igual. En artículos se muestra además el campo para sumar unidades al stock.
 
 <!-- INSERTAR CAPTURA: listado de clientes con buscador y formulario de nuevo registro -->
-![Clientes](capturas/clientes.png)
+![Listado de clientes con buscador](capturas/clientes.png)
+![Formulario de nuevo cliente](capturas/clientes-form.png)
 
 <!-- INSERTAR CAPTURA: listado de artículos con el campo +stock y el mensaje "Stock actualizado" -->
 ![Artículos y stock](capturas/articulos-stock.png)
+![Formulario de nuevo artículo](capturas/articulos-form.png)
 
 ### 8.9 Realizar venta
 Proceso de venta: selección de cliente y forma de pago, y artículos con el cálculo automático del subtotal, el IGV (18 %) y el total antes de facturar. Si la cantidad pedida supera el stock disponible, el sistema regresa al formulario con un mensaje y no registra la venta.
@@ -2906,13 +2909,18 @@ La devolución se registra en tres pasos: elegir la factura de la lista, indicar
 ![Detalle de devolución](capturas/devolucion-detalle.png)
 
 <!-- INSERTAR CAPTURA: pantalla de consultas -->
+El documento del proyecto solicita "Consultas" sin especificar su contenido; se implementaron dos reportes útiles para el negocio: los artículos con stock bajo (para decidir reposiciones) y las ventas por cliente.
+
+<!-- INSERTAR CAPTURA: pantalla de consultas -->
 ![Consultas](capturas/consultas.png)
 
 ### 8.12 Terminal y estructura del proyecto
 Evidencia de que el proyecto se ejecuta correctamente (`npm run dev` para compilar el frontend y `php artisan serve` para el servidor) y de la organización de carpetas del proyecto.
 
 <!-- INSERTAR CAPTURA: terminal con npm run dev y php artisan serve; árbol de archivos en VS Code -->
+<!-- INSERTAR CAPTURA: terminal con npm run dev y php artisan serve; árbol de archivos en VS Code -->
 ![Vite](capturas/vite.png)
+![Servidor](capturas/serve.png)
 ![Estructura](capturas/estructura-proyecto.png)
 
 ---
