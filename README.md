@@ -2872,6 +2872,10 @@ Listado con buscador y formulario de registro del CRUD genérico. Se muestra con
 ![Artículos y stock](capturas/articulos-stock.png)
 ![Formulario de nuevo artículo](capturas/articulos-form.png)
 
+<!-- INSERTAR CAPTURA: listado y formulario de proveedores -->
+![Listado de proveedores](capturas/proveedores.png)
+![Formulario de nuevo proveedor](capturas/proveedores-form.png)
+
 ### 8.9 Realizar venta
 Proceso de venta: selección de cliente y forma de pago, y artículos con el cálculo automático del subtotal, el IGV (18 %) y el total antes de facturar. Si la cantidad pedida supera el stock disponible, el sistema regresa al formulario con un mensaje y no registra la venta.
 
