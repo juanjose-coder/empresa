@@ -2986,4 +2986,4 @@ Los elementos no incluidos requieren un certificado digital y la comunicación c
 
 ## 11. Repositorio
 
-Código fuente completo disponible en este repositorio de GitHub: **https://github.com/TU-USUARIO/empresa**
+Código fuente completo disponible en este repositorio de GitHub
